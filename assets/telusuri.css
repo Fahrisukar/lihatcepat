@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding: 5px 0;
+    background-color: #51CA82;
+}
+.medsos ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: #51CA82;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+    transition: 0.5s;
+}
+header ul li a:hover {
+    background-color: #51CA82;
+    color: #fff;
+    transform: scale(0.98);
+}
+section {
+    padding: 50px 0;
+    text-align: center; /* Tambahkan align center untuk label */
+    font-size: 30px;
+}
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: #51CA82;
+}
+.section {
+    padding: 50px 0;
+}
+.section h3 {
+    padding: 20px 0;
+    color: #51CA82;
+    margin-bottom: 25px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-top: 25px;
+}    
+
+#searchInput {
+    margin-right: 10px;
+	width: 200px;
+}
+
+.search-icon {
+    margin-right: 10px;
+}
+
+.label {
+    background-color: #51CA82;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    font-size: 16px;
+    padding: 0;
+}
+
+.gambar {width: 100%; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr}
+
+.gambar .foto img{width: 288px;}
+
+
+
+.gambar .foto .shopee-link:hover {
+	background-color: #ee4d2da4;
+	color: #fff;
+}
+
+.gambar .foto .shopee-link{border:1px solid green; padding:8px; color: white; background: #EE4D2D;  text-decoration: none; border-radius: 10px; cursor: pointer; display: block; margin-top: 1px;}
+
+.foto {
+	border: 1px solid black; 
+	margin:5px;
+	text-align: center;
+    display: flex;
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    align-items: center; 
+	justify-content: space-between;
+}
+
+.foto img {
+    width: 100px;
+    height: 300px;
+    object-fit: cover; 
+    transition: transform 0.3s;
+}
+
+h2 {
+	font-size: 15px;
+
+ }
+
+.foto p {
+	color:#FF7476; 
+	margin-top: 1px;
+	font-size: 15px;
+}
+
+
+.gambar .foto .ulasan-link 	{
+    color:blue ;
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+.purchase-options {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.purchase-option {
+	width: 60px; /* Tetapkan lebar tetap */
+	height: 10px; /* Tetapkan tinggi tetap */
+	margin-bottom: 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+    margin: 5px;
+	border: 1px solid #ddd;
+	border-radius: 9px;
+	transition: background-color 0.3s;
+}
+
+.purchase-option:hover {
+	text-decoration: underline;
+
+}     
+
+.shopee {
+	background-color: #EE4D2D;
+	color: #fff;
+}
+.tokopedia {
+	background-color: #41b549;
+	color: #fff;
+}
+.lazada {
+	background-color: #000083;
+	color: #fff;
+}

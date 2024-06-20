@@ -1,0 +1,640 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.medsos {
+	padding:5px 0;
+	background-color: #51CA82;
+}
+.medsos ul li {
+	display: inline-block;
+	color: #fff;
+	margin-right: 10px;
+}
+.container {
+	width:80%;
+	margin:0 auto;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+header h1 {
+	float: left;
+	padding:15px 0;
+	color: #51CA82;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+	transition: 0.5s;
+}
+header ul li a:hover {
+	background-color: #51CA82;
+	color: #fff;
+	transform: scale(0.98);
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-top: 25px;
+}    
+
+#searchInput {
+    margin-left: 10px;
+}
+
+.search-icon {
+    margin-right: 10px;
+}
+.active {
+	background-color: #51CA82;
+	color: #fff;
+}
+.banner {
+	height: 60vh;
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 193, 179, .4);
+}
+.banner h2 {
+	color: #fff;
+	z-index: 1;
+	padding: 20px 25px;
+	border:3px solid #fff;
+}
+section {
+	padding: 50px 0;
+}
+section h3 {
+	text-align: center;
+	padding: 20px 0;
+	color:#51CA82;
+}
+section {
+	padding: 50px 0;
+}
+section h3 {
+	text-align: center;
+	padding: 20px 0;
+	color: #51CA82;
+	margin-bottom: 25px;
+}
+.about,
+.service {
+	padding-bottom: 100px;
+}
+.about p {
+	color:#666;
+	word-spacing: 2px;
+	line-height: 25px;
+}
+.service {
+	background-color: #f9f9f9;
+}
+.box {
+	color:#51CA82;
+}
+.box:after {
+	content: '';
+	display: block;
+	clear: both;
+
+}
+.box .col-4 {
+	width: 25%;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+}
+.box .col-7 {
+	width: 14%;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+}
+.icon {
+	width: 70px;
+	height: 70px;
+	border: 1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	margin:0 auto;
+}
+.box .col-4 h4 {
+	margin:20px 0;
+}
+.box .col-7 h4 {
+	margin:25px 0;
+}
+footer {
+	padding:30px 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+.bg-loader {
+	background-color: #eee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-loader .loader {
+	width: 100px;
+	height: 100px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	border-top-color: #51CA82;
+	border-right-color: #51CA82;
+	border-bottom-color: #51CA82;
+	animation: puterin .5s linear infinite
+}
+.label {
+	background-color: #51CA82;
+	color: #fff;
+}
+.gambargerak {
+	margin: 100px;
+}
+@keyframes puterin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+body {
+	margin:0; 
+	font-family: sans-serif;
+	overflow-x: hidden;
+    padding: 0;
+}
+
+.gambar {width: 100%; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr}
+
+.gambar .foto img{width: 288px;}
+
+
+
+.gambar .foto .shopee-link:hover {
+	background-color: #ee4d2da4;
+	color: #fff;
+}
+
+.gambar .foto .shopee-link{border:1px solid green; padding:8px; color: white; background: #EE4D2D;  text-decoration: none; border-radius: 10px; cursor: pointer; display: block; margin-top: 1px;}
+
+.foto {
+	border: 1px solid black; 
+	margin:5px;
+	text-align: center;
+    display: flex;
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    align-items: center; 
+	justify-content: space-between;
+}
+
+.foto img {
+    width: 100px;
+    height: 300px;
+    object-fit: cover; 
+    transition: transform 0.3s;
+}
+
+h2 {
+	font-size: 15px;
+
+ }
+
+.foto p {
+	color:#FF7476; 
+	margin-top: 1px;
+	font-size: 15px;
+}
+
+
+.gambar .foto .ulasan-link 	{
+    color:blue ;
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+.rekomendasi {
+	text-align: center;
+	color: #51CA82;
+	margin-bottom: 25px;
+}
+.rekomendasi h3{padding:4px; color: white; background: #51CA82;  text-decoration: none; cursor: pointer;}
+
+.kategori {
+	padding-bottom: 1px;
+}
+
+.kategori {
+	background-color: #f9f9f9;
+}
+.info {
+	text-align: center;
+	color: #D5D5D5;
+	padding: 176px;
+}
+.info h3 a{
+color: #767676 ;
+}
+
+.sign {
+	width: 300px;
+	padding: 20px;
+	text-align: center;
+	background-color: #51CA82;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+.sign h1{
+	margin-top: 100px;
+	font-family: 'Permanent Marker', cursive;
+	color: #fff;
+	font-size: 40px;
+}
+.sign input{
+	display: block;
+	width: 100%;
+	padding: 0 16px;
+	height: 44px;
+	text-align: center;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	font-family: "monstserrat",sans-serif;
+}
+.txtb{
+	margin: 20px 0;
+	background: rgba(255,255,255,.5);
+	border-radius: 6px;
+}
+.signup{
+	margin-top: 60px;
+	margin-bottom: 20px;
+	background-color: #7CC6C3;
+	color: #fff;
+	border-radius: 44px;
+	cursor: pointer;
+	transition: 0.8s;
+}
+.signup:hover{
+	transform: scale(0.96);
+}
+.sign a{
+	text-decoration: none;
+	color:#fff;
+	font-family: "monstserrat", sans-serif;
+	font-size: 14px;
+	padding: 10px;
+	transition: 0.8s;
+	display: block;
+}
+.sign a:hover{
+	background: rgba(0,0,0,.3);
+}
+.kategori .box .col-7:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover untuk ikon */
+.kategori .box .col-7 .icon:hover {
+    color: #51CA82; /* Ganti warna sesuai keinginan Anda */
+}
+
+/* Efek hover untuk judul kategori */
+.kategori .box .col-7 h4:hover {
+    color: #51CA82; /* Ganti warna sesuai keinginan Anda */
+}
+.navbar {
+    background-color: #51CA82;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.label-text {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: white; 
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+}
+
+.label-text:hover {
+    color: black; 
+}
+
+.label p {
+    text-align: center;
+}
+
+.purchase-options {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.purchase-option {
+	width: 60px; /* Tetapkan lebar tetap */
+	height: 10px; /* Tetapkan tinggi tetap */
+	margin-bottom: 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+    margin: 5px;
+	border: 1px solid #ddd;
+	border-radius: 9px;
+	transition: background-color 0.3s;
+}
+
+.purchase-option:hover {
+	text-decoration: underline;
+
+}     
+
+.shopee {
+	background-color: #EE4D2D;
+	color: #fff;
+}
+.tokopedia {
+	background-color: #41b549;
+	color: #fff;
+}
+.lazada {
+	background-color: #000083;
+	color: #fff;
+}
+
+/* Gaya Responsif */
+
+@media only screen and (max-width: 327px) {
+	
+	.nav-item {
+	margin-right: 1px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.kategori .box .col-7 {
+		margin: 20px;
+	}
+	.nav-item {
+	margin-right: 5px;
+	}
+}
+
+@media only screen and (max-width: 555px) {
+    /* Aturan CSS responsif untuk layar kecil (kurang dari atau sama dengan 450px) */
+    header h1 {
+        font-size: 20px;
+    }
+
+	html {
+        overflow-x: hidden; /* Menyembunyikan scroll horizontal pada layar kecil */
+    }
+
+	.kategori .box .col-7 {
+		margin: 20px;
+	}
+	.banner {
+        background-size: cover;
+        background-position: center;
+        height: 100px; /* Sesuaikan tinggi container banner sesuai kebutuhan */
+		align-items: center;
+		justify-content: center;
+
+    }
+
+	.banner h2 {
+		text-align: center;
+	}
+
+	body {
+		overflow-x: hidden !important;
+		width: 100%;
+	}
+
+    header ul li a {
+        padding: 12px 16px;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+    }
+
+    .box .col-4,
+    .box .col-7 {
+        width: 100%; /* Lebar penuh pada layar kecil */
+        margin-right: 0; /* Hilangkan margin kanan */
+        margin-bottom: 10px;
+    }
+
+	.gambar {
+        grid-template-columns: 1fr; /* Set satu kolom pada layar kecil */
+    }
+
+	.gambargerak {
+		overflow: auto; /* Menambahkan scroll horizontal jika gambar terlalu lebar */
+	}
+
+	.gambargerak img {
+		width: auto; /* Menyesuaikan lebar gambar agar tidak melebihi lebar kontennya */
+		height: 100; /* Menyesuaikan tinggi gambar agar proporsional */
+		max-width: 100%; /* Membuat gambar tidak melebihi lebar container */
+		max-height: 100%; /* Membuat gambar tidak melebihi tinggi container */
+	}
+
+	.gambargerak marquee {
+		width: 100%; /* Menyesuaikan lebar marquee dengan lebar container */
+	}
+
+    .gambar .foto img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: none; /* Hapus efek transisi untuk gambar */
+		grid-template-columns: 1fr;
+    }
+
+    .rekomendasi h3 {
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+	.nav-item {
+		margin-right: 10px;
+		}
+    /* Tambahkan aturan CSS responsif tambahan jika diperlukan */
+}
+
+@media only screen and (min-width: 555px) and (max-width: 800px) {
+    /* Aturan CSS responsif untuk layar kecil hingga sedang */
+	.banner {
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+    }
+	body {
+		overflow-x: hidden !important;
+		width: 100%;
+	}
+
+    .box .col-4,
+    .box .col-7 {
+        width: 100%; /* Lebar gambar setengah dari lebar kontainer */
+        margin-right: 4%; /* Menambah margin antara gambar */
+        margin-bottom: 10px; /* Menambah margin bawah agar gambar tidak terpotong */
+    }
+
+    .box .col-4:nth-child(2n),
+    .box .col-7:nth-child(2n) {
+        margin-right: 0; /* Menghilangkan margin kanan pada setiap gambar kedua di setiap baris */
+    }
+
+
+
+	.gambar{
+		grid-template-columns: 1fr 1fr ;
+	 } 
+
+	 .gambargerak {
+		overflow: auto; /* Menambahkan scroll horizontal jika gambar terlalu lebar */
+	}
+
+	.gambargerak img {
+		width: auto; /* Menyesuaikan lebar gambar agar tidak melebihi lebar kontennya */
+		height: 100; /* Menyesuaikan tinggi gambar agar proporsional */
+		max-width: 100%; /* Membuat gambar tidak melebihi lebar container */
+		max-height: 100%; /* Membuat gambar tidak melebihi tinggi container */
+	}
+
+	.gambargerak marquee {
+		width: 100%; /* Menyesuaikan lebar marquee dengan lebar container */
+	}
+
+    .gambar .foto img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: none; /* Hapus efek transisi untuk gambar */
+    }
+}
+
+
+
+/* Layar besar (lebih dari 768px) */
+@media only screen and (min-width: 800px) and (max-width: 1196px){
+    /* Aturan CSS responsif untuk layar besar */
+	.banner {
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+    }
+	body {
+		overflow-x: hidden !important;
+		width: 100%;
+	}
+
+    .box .col-4,
+    .box .col-7 {
+        width: 100%; /* Lebar gambar setengah dari lebar kontainer */
+        margin-right: 4%; /* Menambah margin antara gambar */
+        margin-bottom: 10px; /* Menambah margin bawah agar gambar tidak terpotong */
+    }
+
+    .box .col-4:nth-child(2n),
+    .box .col-7:nth-child(2n) {
+        margin-right: 0; /* Menghilangkan margin kanan pada setiap gambar kedua di setiap baris */
+    }
+
+	.gambar{
+		grid-template-columns: 1fr 1fr 1fr;
+	 } 
+
+	 .gambargerak {
+		overflow: auto; /* Menambahkan scroll horizontal jika gambar terlalu lebar */
+	}
+
+	.gambargerak img {
+		width: auto; /* Menyesuaikan lebar gambar agar tidak melebihi lebar kontennya */
+		height: 100; /* Menyesuaikan tinggi gambar agar proporsional */
+		max-width: 100%; /* Membuat gambar tidak melebihi lebar container */
+		max-height: 100%; /* Membuat gambar tidak melebihi tinggi container */
+	}
+
+	.gambargerak marquee {
+		width: 100%; /* Menyesuaikan lebar marquee dengan lebar container */
+	}
+
+    .gambar .foto img {
+        width: 100%;
+        object-fit: cover;
+        transition: none; /* Hapus efek transisi untuk gambar */
+		height: auto;
+
+    }
+}
